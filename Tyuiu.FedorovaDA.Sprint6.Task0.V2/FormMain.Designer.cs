@@ -30,11 +30,11 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            textBox1 = new TextBox();
-            textBoxTask_FDA = new TextBox();
-            textBox3 = new TextBox();
+            textCondition_FDA = new TextBox();
+            textTask_FDA = new TextBox();
+            textEnter_FDA = new TextBox();
             textVarX_FDA = new TextBox();
-            textBox5 = new TextBox();
+            textConclusion_FDA = new TextBox();
             textResult_FDA = new TextBox();
             Formula = new ImageList(components);
             textBoxVarX_FDA = new TextBox();
@@ -45,39 +45,39 @@
             ((System.ComponentModel.ISupportInitialize)PictureBoxFormula_FDA).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
+            // textCondition_FDA
             // 
-            textBox1.BackColor = SystemColors.Control;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Location = new Point(34, 25);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(125, 20);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "Условие";
+            textCondition_FDA.BackColor = SystemColors.Control;
+            textCondition_FDA.BorderStyle = BorderStyle.None;
+            textCondition_FDA.Location = new Point(34, 25);
+            textCondition_FDA.Name = "textCondition_FDA";
+            textCondition_FDA.ReadOnly = true;
+            textCondition_FDA.Size = new Size(125, 20);
+            textCondition_FDA.TabIndex = 0;
+            textCondition_FDA.Text = "Условие";
             // 
-            // textBoxTask_FDA
+            // textTask_FDA
             // 
-            textBoxTask_FDA.BackColor = SystemColors.Control;
-            textBoxTask_FDA.BorderStyle = BorderStyle.None;
-            textBoxTask_FDA.Location = new Point(34, 51);
-            textBoxTask_FDA.Multiline = true;
-            textBoxTask_FDA.Name = "textBoxTask_FDA";
-            textBoxTask_FDA.ReadOnly = true;
-            textBoxTask_FDA.Size = new Size(496, 213);
-            textBoxTask_FDA.TabIndex = 1;
-            textBoxTask_FDA.Text = "Вычислить выражение по формуле";
+            textTask_FDA.BackColor = SystemColors.Control;
+            textTask_FDA.BorderStyle = BorderStyle.None;
+            textTask_FDA.Location = new Point(34, 51);
+            textTask_FDA.Multiline = true;
+            textTask_FDA.Name = "textTask_FDA";
+            textTask_FDA.ReadOnly = true;
+            textTask_FDA.Size = new Size(496, 213);
+            textTask_FDA.TabIndex = 1;
+            textTask_FDA.Text = "Вычислить выражение по формуле";
             // 
-            // textBox3
+            // textEnter_FDA
             // 
-            textBox3.BackColor = SystemColors.Control;
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Location = new Point(34, 270);
-            textBox3.Name = "textBox3";
-            textBox3.ReadOnly = true;
-            textBox3.Size = new Size(98, 20);
-            textBox3.TabIndex = 2;
-            textBox3.Text = "Ввод данных";
+            textEnter_FDA.BackColor = SystemColors.Control;
+            textEnter_FDA.BorderStyle = BorderStyle.None;
+            textEnter_FDA.Location = new Point(34, 270);
+            textEnter_FDA.Name = "textEnter_FDA";
+            textEnter_FDA.ReadOnly = true;
+            textEnter_FDA.Size = new Size(98, 20);
+            textEnter_FDA.TabIndex = 2;
+            textEnter_FDA.Text = "Ввод данных";
             // 
             // textVarX_FDA
             // 
@@ -90,17 +90,17 @@
             textVarX_FDA.TabIndex = 3;
             textVarX_FDA.Text = "Переменная Х";
             // 
-            // textBox5
+            // textConclusion_FDA
             // 
-            textBox5.BackColor = SystemColors.Control;
-            textBox5.BorderStyle = BorderStyle.None;
-            textBox5.Location = new Point(492, 270);
-            textBox5.Name = "textBox5";
-            textBox5.ReadOnly = true;
-            textBox5.RightToLeft = RightToLeft.No;
-            textBox5.Size = new Size(112, 20);
-            textBox5.TabIndex = 4;
-            textBox5.Text = "Вывод данных";
+            textConclusion_FDA.BackColor = SystemColors.Control;
+            textConclusion_FDA.BorderStyle = BorderStyle.None;
+            textConclusion_FDA.Location = new Point(492, 270);
+            textConclusion_FDA.Name = "textConclusion_FDA";
+            textConclusion_FDA.ReadOnly = true;
+            textConclusion_FDA.RightToLeft = RightToLeft.No;
+            textConclusion_FDA.Size = new Size(112, 20);
+            textConclusion_FDA.TabIndex = 4;
+            textConclusion_FDA.Text = "Вывод данных";
             // 
             // textResult_FDA
             // 
@@ -180,11 +180,11 @@
             Controls.Add(textBoxResult_FDA);
             Controls.Add(textBoxVarX_FDA);
             Controls.Add(textResult_FDA);
-            Controls.Add(textBox5);
+            Controls.Add(textConclusion_FDA);
             Controls.Add(textVarX_FDA);
-            Controls.Add(textBox3);
-            Controls.Add(textBoxTask_FDA);
-            Controls.Add(textBox1);
+            Controls.Add(textEnter_FDA);
+            Controls.Add(textTask_FDA);
+            Controls.Add(textCondition_FDA);
             Name = "FormMain";
             Text = "Спринт 6 | Таск 0 | Вариант 2 | Федорова Д.А.";
             Load += FormMain_Load;
@@ -195,11 +195,11 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBoxTask_FDA;
-        private TextBox textBox3;
+        private TextBox textCondition_FDA;
+        private TextBox textTask_FDA;
+        private TextBox textEnter_FDA;
         private TextBox textVarX_FDA;
-        private TextBox textBox5;
+        private TextBox textConclusion_FDA;
         private TextBox textResult_FDA;
         public ImageList Formula;
         private TextBox textBoxVarX_FDA;
