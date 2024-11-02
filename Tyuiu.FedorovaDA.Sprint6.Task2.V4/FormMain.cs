@@ -264,7 +264,7 @@ namespace Tyuiu.FedorovaDA.Sprint6.Task2.V4
 
         private void buttonQuestion_FDA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Выполнил студент АСОиУб-24-1 Федорова Дарья Артемовна", "Сообщение");
+            MessageBox.Show("Таск 2 выполнил студент группы АСОиУб-24-1 Федорова Дарья Артемовна", "Сообщение");
         }
     }
 }
