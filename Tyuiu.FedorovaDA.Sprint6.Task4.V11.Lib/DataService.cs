@@ -14,8 +14,10 @@ namespace Tyuiu.FedorovaDA.Sprint6.Task4.V11.Lib
             {
                 if (2 - 2 * x == 0)
                 {
-                    valueArray[count] = 0;
+                    y = 0;
+                    valueArray[count] = y;
                     count++;
+                    continue;
                 }
                 y = Math.Round(Math.Cos(x) + Math.Sin(x) / (2 - 2 * x) - 4 * x, 2);
                 valueArray[count] = y;
