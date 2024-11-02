@@ -12,7 +12,7 @@ namespace Tyuiu.FedorovaDA.Sprint6.Task4.V11.Lib
             int count = 0;
             for (int x = startValue; x <= stopValue; x++)
             {
-                if (Math.Sin(x) + 2 == 0)
+                if (2 - 2 * x == 0)
                 {
                     valueArray[count] = 0;
                     count++;
