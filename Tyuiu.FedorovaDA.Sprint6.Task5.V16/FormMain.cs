@@ -12,7 +12,7 @@ namespace Tyuiu.FedorovaDA.Sprint6.Task5.V16
         }
         DataService ds = new DataService();
         string path = @"C:\Users\Daria\source\repos\Tyuiu.FedorovaDA.Sprint6\Tyuiu.FedorovaDA.Sprint6.Task5.V16\bin\Debug\net8.0-windows\InPutFileTask5V16.txt";
-        private void SetupPlot()
+        private void SetupPlot() 
         {
             formsPlotResult_FDA.Plot.Title("Положительные числа");
             formsPlotResult_FDA.Plot.XLabel("Номер");
