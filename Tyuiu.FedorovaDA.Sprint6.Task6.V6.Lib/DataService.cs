@@ -10,28 +10,33 @@ public class DataService : ISprint6Task6V6
 
         try
         {
-            using (StreamReader reader = new StreamReader(path))
+            string input;
+            using (var reader = new StreamReader(path))
             {
-                string line;
-                while ((line = reader.ReadLine()) != null)
+                input = reader.ReadToEnd();
+            }
+
+            
+            var words = input.Split(new[] { ' ', ',', '.', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
+            var wordsWithLowercaseB = new List<string>();
+
+            
+            foreach (var word in words)
+            {
+                if (word.Contains('b'))
                 {
-                    string[] words = line.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
-                    foreach (var word in words)
-                    {
-                        if (word.Contains("b", StringComparison.OrdinalIgnoreCase))
-                        {
-                            result.Append(word).Append(" ");
-                        }
-                    }
+                    wordsWithLowercaseB.Add(word);
                 }
             }
+            return string.Join(" ", wordsWithLowercaseB);
+            
         }
         catch (Exception ex)
         {
             throw new Exception($"Ошибка: {ex.Message}", ex);
         }
 
-        return result.ToString().Trim();
+        
     }
 }
 
