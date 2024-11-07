@@ -21,7 +21,8 @@ namespace Tyuiu.FedorovaDA.Sprint6.Task6.V6
         private void buttonDone_FDA_Click(object sender, EventArgs e)
         {
             string str = "";
-            textBoxOut_FDA.Text = ds.CollectTextFromFile(str, openFilePath);
+            textBoxOut_FDA.Text = ds.CollectTextFromFile(openFilePath);
+
         }
 
         private void buttonQuestion_FDA_Click(object sender, EventArgs e)
