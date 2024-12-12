@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tyuiu.FedorovaDA.Sprint6.Task6.V6
+namespace Tyuiu.FedorovaDA.Sprint6.Task7.V14
 {
     public partial class FormAbout : Form
     {
@@ -21,7 +21,5 @@ namespace Tyuiu.FedorovaDA.Sprint6.Task6.V6
         {
             this.Close();
         }
-
-        
     }
 }

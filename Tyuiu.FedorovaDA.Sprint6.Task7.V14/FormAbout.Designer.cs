@@ -1,4 +1,4 @@
-﻿namespace Tyuiu.FedorovaDA.Sprint6.Task6.V6
+﻿namespace Tyuiu.FedorovaDA.Sprint6.Task7.V14
 {
     partial class FormAbout
     {
@@ -29,37 +29,36 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
-            textBoxAboutMe_FDA = new TextBox();
             buttonOk_FDA = new Button();
+            textBoxAboutMe_FDA = new TextBox();
             SuspendLayout();
+            // 
+            // buttonOk_FDA
+            // 
+            buttonOk_FDA.Location = new Point(576, 268);
+            buttonOk_FDA.Name = "buttonOk_FDA";
+            buttonOk_FDA.Size = new Size(94, 29);
+            buttonOk_FDA.TabIndex = 3;
+            buttonOk_FDA.Text = "Ок";
+            buttonOk_FDA.UseVisualStyleBackColor = true;
+            buttonOk_FDA.Click += buttonOk_FDA_Click;
             // 
             // textBoxAboutMe_FDA
             // 
             textBoxAboutMe_FDA.BorderStyle = BorderStyle.None;
-            textBoxAboutMe_FDA.Location = new Point(245, 45);
+            textBoxAboutMe_FDA.Location = new Point(280, 39);
             textBoxAboutMe_FDA.Multiline = true;
             textBoxAboutMe_FDA.Name = "textBoxAboutMe_FDA";
             textBoxAboutMe_FDA.ReadOnly = true;
             textBoxAboutMe_FDA.Size = new Size(410, 202);
-            textBoxAboutMe_FDA.TabIndex = 0;
+            textBoxAboutMe_FDA.TabIndex = 2;
             textBoxAboutMe_FDA.Text = resources.GetString("textBoxAboutMe_FDA.Text");
-            
-            // 
-            // buttonOk_FDA
-            // 
-            buttonOk_FDA.Location = new Point(541, 274);
-            buttonOk_FDA.Name = "buttonOk_FDA";
-            buttonOk_FDA.Size = new Size(94, 29);
-            buttonOk_FDA.TabIndex = 1;
-            buttonOk_FDA.Text = "Ок";
-            buttonOk_FDA.UseVisualStyleBackColor = true;
-            buttonOk_FDA.Click += buttonOk_FDA_Click;
             // 
             // FormAbout
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(657, 315);
+            ClientSize = new Size(681, 303);
             Controls.Add(buttonOk_FDA);
             Controls.Add(textBoxAboutMe_FDA);
             Name = "FormAbout";
@@ -70,7 +69,7 @@
 
         #endregion
 
-        private TextBox textBoxAboutMe_FDA;
         private Button buttonOk_FDA;
+        private TextBox textBoxAboutMe_FDA;
     }
 }
